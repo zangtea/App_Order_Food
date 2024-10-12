@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "App_Order_Food"
 include(":app")
- 
+include(":AndroidStudioProjects")
