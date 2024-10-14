@@ -43,6 +43,11 @@ public class ListFoodsActivity extends BaseActivity {
         getIntentExtra();
 
         initList();
+        setVariable();
+
+    }
+
+    private void setVariable() {
 
     }
 
@@ -67,7 +72,7 @@ public class ListFoodsActivity extends BaseActivity {
                         list.add(issue.getValue(Foods.class));
 
                     }
-                    if (list.size()>0){
+                    if (list.size() >0){
                         binding.foodListView.setLayoutManager(new GridLayoutManager(ListFoodsActivity.this, 2));
                         adapterListFood = new FoodListAdapter(list);
                         binding.foodListView.setAdapter(adapterListFood);
@@ -85,7 +90,7 @@ public class ListFoodsActivity extends BaseActivity {
 
     private void getIntentExtra() {
         categoryId = getIntent().getIntExtra("CategoryId",0);
-        categoryName = getIntent().getStringExtra("Category");
+        categoryName = getIntent().getStringExtra("CategoryName");
         searchText = getIntent().getStringExtra("text");
         isSearch = getIntent().getBooleanExtra("isSearch",false);
         binding.titleTxt.setText(categoryName);

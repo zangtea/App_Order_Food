@@ -43,7 +43,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/logoutBtn"
                     android:layout_width="34dp"
                     android:layout_height="32dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -78,7 +78,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/editTextText"
+                        android:id="@+id/searchEdt"
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
                         android:layout_margin="4dp"
