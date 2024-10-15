@@ -59,6 +59,8 @@ private ActivityMainBinding binding;
             startActivity(new Intent(MainActivity.this,LoginActivity.class));
         });
 
+
+
         binding.searchBtn.setOnClickListener(view -> {
             String text = binding.searchEdt.getText().toString();
             if (!text.isEmpty()){
@@ -68,6 +70,8 @@ private ActivityMainBinding binding;
                 startActivity(intent);
             }
         });
+
+        binding.cartBtn.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, CartActivity.class)));
 
     }
 

@@ -181,7 +181,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/minBtn"
+                    android:id="@+id/minusBtn"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_marginStart="16dp"
@@ -206,7 +206,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/minBtn"
+                    app:layout_constraintStart_toEndOf="@+id/minusBtn"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
